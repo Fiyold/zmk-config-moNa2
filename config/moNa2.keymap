@@ -47,10 +47,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L                        &kp U         &kp COMMA  &kp PERIOD                                  &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp E             &kp I                        &kp A         &kp O      &kp MINUS    &kp LC(HOME)    &kp PAGE_UP    &kp K        &kp T  &kp N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X                        &kp C         &kp V      &kp LC(Z)    &kp LC(Y)       &kp PAGE_DOWN  &kp G        &kp D  &kp M  &kp J  &lt 4 B
-&kp LCTRL         &kp LA(LANG_ZENKAKUHANKAKU)  &kp LEFT_ALT  &mkp RCLK  &lt 2 SPACE  &mkp LCLK       &kp BACKSPACE  &lt 1 ENTER                       &mkp LCLK
+&kp Q             &kp L         &kp U         &kp COMMA  &kp PERIOD                                  &kp F        &kp W  &kp R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O      &kp MINUS    &kp LC(HOME)    &kp PAGE_UP    &kp K        &kp T  &kp N  &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp LC(Z)    &kp LC(Y)       &kp PAGE_DOWN  &kp G        &kp D  &kp M  &kp J  &lt 4 B
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &mkp RCLK  &lt 2 SPACE  &mkp LCLK       &kp BACKSPACE  &lt 1 ENTER                       &mkp LCLK
             >;
 
             sensor-bindings =
@@ -58,18 +58,18 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_2 {
+        layer_1 {
             bindings = <
-&kp MINUS       &kp KP_NUMBER_7          &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                              &kp CARET    &kp SEMICOLON    &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH       &kp KP_NUMBER_4          &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans       &kp MINUS  &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp KP_NUMLOCK  &kp KP_NUMBER_1          &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &kp UNDER  &kp HASH     &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans          &kp LANG_ZENKAKUHANKAKU  &kp KP_NUMBER_0  &trans           &trans        &trans       &trans     &trans                                                             &kp PIPE
+&kp MINUS       &kp KP_NUMBER_7          &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp PLUS                                                       &kp CARET    &kp SEMICOLON    &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH       &kp KP_NUMBER_4          &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp ASTERISK         &trans               &kp MINUS            &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp KP_NUMLOCK  &kp KP_NUMBER_1          &kp KP_NUMBER_2  &kp KP_NUMBER_3      &kp PERIOD           &kp EQUAL            &kp UNDER            &kp HASH     &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans          &kp LANG_ZENKAKUHANKAKU  &kp KP_NUMBER_0  &kp INTERNATIONAL_5  &kp INTERNATIONAL_2  &kp LANG_HIRAGANA    &kp INTERNATIONAL_4  &trans                                                             &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_1 {
+        layer_2 {
             bindings = <
 &kp ESCAPE      &kp LG(LS(S))  &kp LC(T)       &trans         &kp LG(D)                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &kp TAB         &kp LA(LEFT)   &kp LA(ESCAPE)  &kp LA(RIGHT)  &kp LG(B)  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10

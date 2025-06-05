@@ -47,10 +47,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA  &kp PERIOD                                               &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O      &kp MINUS    &trans                       &kp MINUS      &kp K        &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &mo 3        &lt 4 LANG_ZENKAKUHANKAKU    &kp SEMICOLON  &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp RCLK  &lt 1 SPACE  &mkp LCLK                    &kp BACKSPACE  &lt 2 ENTER                         &kp DEL
+&kp Q             &kp L     &kp U         &kp COMMA  &kp PERIOD                                  &kp F        &kp W  &lt 5 R  &kp Y  &kp P
+&kp E             &kp I     &kp A         &kp O      &kp MINUS    &kp LC(HOME)    &kp PAGE_UP    &kp K        &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V      &kp LC(Z)    &kp LC(Y)       &kp PAGE_DOWN  &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL         &kp LALT  &kp LEFT_GUI  &mkp RCLK  &lt 1 SPACE  &mkp LCLK       &kp BACKSPACE  &lt 2 ENTER                         &mkp LCLK
             >;
 
             sensor-bindings =
@@ -60,10 +60,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &kp F12
+&kp ESCAPE      &kp LG(LS(S))  &kp LC(T)    &trans         &trans                          &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp TAB         &kp LA(LEFT)   &kp LA(TAB)  &kp LA(RIGHT)  &kp LG(B)  &kp LG(D)    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp LEFT_SHIFT  &kp LC(X)      &kp LC(C)    &kp LC(V)      &kp LC(A)  &trans       &trans  &trans  &trans  &trans  &trans  &kp F11
+&kp LCTRL       &trans         &trans       &trans         &trans     &trans       &trans  &trans                          &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -71,10 +71,10 @@
 
         layer_2 {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION   &kp QUESTION       &kp AT_SIGN     &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                     &trans          &trans                                                                     &kp PIPE
+&kp MINUS       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET         &kp SEMICOLON    &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp AT_SIGN       &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &trans          &kp LEFT_BRACKET  &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans          &trans           &kp KP_NUMBER_0  &trans           &trans        &trans                     &trans          &trans                                                                  &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;

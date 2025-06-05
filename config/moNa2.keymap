@@ -71,10 +71,10 @@
 
         layer_2 {
             bindings = <
-&kp MINUS       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET         &kp SEMICOLON    &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp AT_SIGN       &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &trans          &kp LEFT_BRACKET  &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans          &trans           &kp KP_NUMBER_0  &trans           &trans        &trans                     &trans          &trans                                                                  &kp PIPE
+&kp MINUS       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                            &kp CARET    &kp SEMICOLON    &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp MINUS  &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &kp UNDER  &kp HASH     &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans          &trans           &kp KP_NUMBER_0  &trans           &trans        &trans                     &trans     &trans                                                             &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
